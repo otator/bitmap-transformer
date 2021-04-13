@@ -18,3 +18,13 @@ if the file could not be found -> a message in red color will tell you the error
 if the file is found -> the method name will be printed in the cli and after that you will get a message tells you where the file is saved and what its name as shown below
 
 **Image saved in** _'c/Users/user1/401/bitmap-transformer/lab_04/app/' as 'my_design.bmp'_
+
+### methods in the project
+**class BitMap**
+* `readImage(String <fileName>)` method that takes in a file name and read it using `fileInputStream`, and read this file using the `read` method of class `ImageIO` and returns an object of type `BufferedImage` to use later in code.
+* `writeImage(BufferedImage <sourceFile>, String <destination>)` method that takes in the source file of type BufferedImage and a destination path to save/write the image in it.
+* `invert(BufferedImage image)` method to invert the colors of the input image.
+* `addWaterMark(BufferedImage sourceImage, String text)` mwthod to add text (water mark) to an image
+* `mirror(BufferedImage image)` method to mirror the image upside down 
+ 
+ 
